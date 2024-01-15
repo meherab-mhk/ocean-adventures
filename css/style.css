@@ -67,7 +67,6 @@ ul,ol{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -77,11 +76,53 @@ ul,ol{
     width: 100%;
     height: 100%;
     text-align: center;
-    
 }
-
-
-
+.banner-title{
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: normal;
+}
+.banner-desc{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 0 16rem;
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.banner-input-box{
+    padding: 1rem;
+    background-color: #ffffff70;
+    margin: 0 12rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+.banner-input-size{
+    width: 174px;
+    padding: 16px;
+    background-color: #FFF;
+    border: 0;
+    border-radius: 0.5rem;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+.banner-input-btn{
+    background-color: #FF5400;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 
 
@@ -94,11 +135,53 @@ ul,ol{
     .navbar{
         margin: 1.2rem;
     }
+    .nav-left-side h3{
+        font-size: 22px;
+    }
     .nav-right-side ul{
         display: none;
     }
     .frame-icon{
         display: block;
         cursor: pointer;
+    }
+    .banner{
+        margin: 1.3rem;
+    }
+    .banner-container{
+        padding: 2rem 1.5rem;
+    }
+    .banner-title{
+        font-size: 22px;
+    }
+    .banner-desc{
+        padding: 0;
+    }
+    .banner-input-box{
+        margin: 0;
+        flex-direction: column;
+    }
+    .banner-input-size{
+        width: 100%;
+    }
+}
+/* Media query for tablet devices */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .banner{
+        margin: 0 1.5rem;
+    }
+    .banner-container{
+        padding: 2rem 1.5rem;
+    }
+    .banner-desc {
+        padding: 0 4rem;
+    }
+    .banner-input-box {
+        flex-wrap: wrap;
+        margin: 0 3rem;
     }
 }

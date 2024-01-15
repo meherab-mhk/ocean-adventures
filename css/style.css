@@ -1,3 +1,8 @@
+/* Fonts link*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+/* Fonts family: 
+font-family: 'Mulish', sans-serif; */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +13,92 @@ a{
 }
 ul,ol{
     list-style-type: none;
+}
+.content-width{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* navbar section css */
+.navbar{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left-side{
+    display: flex;
+    align-items: center;
+}
+.nav-left-side img{
+    margin-right: 1rem;
+}
+.nav-left-side h3{
+    color: #131318;
+    font-family: 'Mulish', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: normal;
+}
+.nav-left-side>h3>span{
+    color: #FF5400; 
+}
+.nav-right-side ul{
+    display: flex;
+}
+.nav-right-side ul li a{
+    margin: 0 1.5rem;
+    color: #424247;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    transition: all linear .3s;
+}
+.nav-right-side ul li a:hover{
+    color: #FF5400;
+}
+.frame-icon{
+    display: none;
+}
+
+/* banner section css */
+.banner{
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.banner-container{
+    padding: 100px 0;
+    background-color: #13131882;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Media Query CSS */
+/* Media query for mobile device */
+@media screen and (max-width: 600px) {
+    .navbar{
+        margin: 1.2rem;
+    }
+    .nav-right-side ul{
+        display: none;
+    }
+    .frame-icon{
+        display: block;
+        cursor: pointer;
+    }
 }

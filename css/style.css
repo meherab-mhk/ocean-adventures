@@ -371,10 +371,57 @@ ul,ol{
     width: 100%;
     height: 100%;
 }
-
-
-
-
+/* footer section css */
+.footer-bg{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 110px 0;
+}
+.footer-content{
+    max-width: 872px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    margin-right: 1rem;
+}
+.footer-logo h3{
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: normal;
+}
+.footer-logo>h3>span{
+    color: #FF5400; 
+}
+.footer-content p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 24px;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+}
+.social-icons a{
+    color: #131318;
+}
+.cpyright{
+    margin-bottom: 0rem !important;
+}
 
 
 
@@ -492,7 +539,8 @@ ul,ol{
         grid-column: 1/span 1;
         grid-row: 1fr;
     }
-    .newsletter{
+    .newsletter,
+    .footer-content{
         margin: 100px 1.5rem;
     }
     .newsletter-container{

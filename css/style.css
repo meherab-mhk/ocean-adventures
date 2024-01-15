@@ -7,6 +7,7 @@ font-family: 'Mulish', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
 }
 a{
     text-decoration: none;
@@ -24,10 +25,24 @@ ul,ol{
     padding: 14px 34px;
     border: 0;
     border-radius: 8px;
-    font-family: 'Mulish', sans-serif;
     font-size: 20px;
     font-weight: 800;
     line-height: normal;
+}
+.section-title{
+    text-align: center;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+}
+.section-para{
+    margin-top: 1.5rem;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 /* navbar section css */
 .navbar{
@@ -45,7 +60,6 @@ ul,ol{
 }
 .nav-left-side h3{
     color: #131318;
-    font-family: 'Mulish', sans-serif;
     font-size: 36px;
     font-weight: 800;
     line-height: normal;
@@ -59,7 +73,6 @@ ul,ol{
 .nav-right-side ul li a{
     margin: 0 1.5rem;
     color: #424247;
-    font-family: 'Mulish', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
@@ -90,7 +103,6 @@ ul,ol{
 }
 .banner-title{
     color: #FFF;
-    font-family: 'Mulish', sans-serif;
     font-size: 64px;
     font-weight: 800;
     line-height: normal;
@@ -100,7 +112,6 @@ ul,ol{
     margin-bottom: 3rem;
     padding: 0 16rem;
     color: #FFF;
-    font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -121,7 +132,6 @@ ul,ol{
     border: 0;
     border-radius: 0.5rem;
     color: rgba(19, 19, 24, 0.50);
-    font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
@@ -145,7 +155,6 @@ ul,ol{
 }
 .popular-tour-content h3{
     color: #131318;
-    font-family: 'Mulish', sans-serif;
     font-size: 40px;
     font-weight: 800;
     line-height: normal;
@@ -153,7 +162,6 @@ ul,ol{
 .popular-tour-content-p{
     margin-top: 1.5rem;
     color: rgba(19, 19, 24, 0.70);
-    font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -170,16 +178,7 @@ ul,ol{
 .destination{
     margin: 100px 0;
 }
-.destination-title{
-    text-align: center;
-    color: #131318;
-    font-family: 'Mulish', sans-serif;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: normal;
-}
 .destination-p{
-    text-align: center;
     padding: 0 16rem;
     margin-bottom: 3rem;
 }
@@ -208,7 +207,6 @@ ul,ol{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Mulish', sans-serif;
     font-size: 28px;
     font-weight: 700;
     line-height: normal;
@@ -245,6 +243,57 @@ ul,ol{
     grid-column: 6/span 7;
     grid-row: 3/span 1;
 }
+/* choose us section css */
+.choose-us-desc{
+    padding: 0 16rem;
+    margin-bottom: 3rem;
+}
+.choose-card-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+.choose-card{
+    padding: 2rem;
+    border-radius: 16px;
+}
+.card-1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    grid-column: 1/span 6;
+}
+.card-2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    grid-column: 7/span 6;
+}
+.card-3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    grid-column: 4/span 6;
+}
+.choose-card .card-title{
+    margin-top: 2rem;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+}
+.choose-card .card-desc{
+    margin-top: 1rem;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
 
 
 /* Media Query CSS */
@@ -334,6 +383,31 @@ ul,ol{
         grid-column: 1/span 1;
         grid-row: 7/span 1;
     }
+    .choose-us{
+        margin: 100px 1.5rem;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+    .choose-us-desc {
+        padding: 0 0rem;
+    }
+    .choose-card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .card-1{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
+    }
+    .card-2{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
+    }
+    .card-3{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
+    }
 }
 /* Media query for tablet devices */
 @media screen and (min-width: 601px) and (max-width: 992px) {
@@ -364,5 +438,27 @@ ul,ol{
     }
     .destination-p {
         padding: 0 8rem;
+    }
+    .choose-us{
+        margin: 100px 1.5rem;
+    }
+    .choose-us-desc {
+        padding: 0 6rem;
+    }
+    .choose-card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .card-1{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
+    }
+    .card-2{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
+    }
+    .card-3{
+        grid-column: 1/span 1;
+        grid-row: 1fr;
     }
 }

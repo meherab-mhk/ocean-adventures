@@ -520,7 +520,7 @@ ul,ol{
         font-size: 22px;
     }
     .banner-desc{
-        padding: 0;
+        padding: 0 0.5rem;
     }
     .banner-input-box{
         margin: 0;

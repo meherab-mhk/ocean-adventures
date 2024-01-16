@@ -640,6 +640,9 @@ ul,ol{
     .footer-bg {
         padding: 10px 0;
     }
+    .footer-logo h3{
+        font-size: 22px;
+    }
 }
 /* Media query for tablet devices */
 @media screen and (min-width: 601px) and (max-width: 992px) {
@@ -745,5 +748,8 @@ ul,ol{
     .newsletter-img{
         grid-column: 1/span 1;
         
+    }
+    .footer-content p{
+        margin: 1.5rem;
     }
 }

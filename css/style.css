@@ -288,6 +288,72 @@ ul,ol{
     font-weight: 400;
     line-height: 26px;
 }
+/* blog section css */
+.blog{
+    margin: 100px 0;
+    background-color: #cecece4f;
+    border-radius: 8px;
+    padding: 1rem;
+    position: relative;
+}
+
+.blog::before {
+	position: absolute;
+	content: "New Section";
+	top: 27px;
+	left: 0;
+	padding: 0.3rem;
+	font-size: 14px;
+	color: #131318;
+	background-color: #FF5400;
+	transform: rotate(-35.628deg);
+    border-radius: 4px;
+}
+.blog-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.blog-card img{
+    width: 100%;
+    border-radius: 16px;
+}
+.blog-btn-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-card .blog-btn-time a{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: #FF5400;
+    background-color: #FFF;
+    border: 1px solid #FF5400;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+.blog-card .blog-btn-time p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #424247;
+
+}
+.blog-card h3>a{
+    border: 0;
+    padding: 0;
+    color: #131318;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: normal;
+    transition: all linear .3s;
+}
+.blog-card h3>a:hover{
+    color: #FF5400;
+}
 /* newsletter section css */
 .newsletter{
     margin: 100px 0;
@@ -479,6 +545,7 @@ ul,ol{
     }
     .destination,
     .choose-us,
+    .blog,
     .newsletter,
     .footer-content{
         margin: 50px 1.5rem;
@@ -549,6 +616,9 @@ ul,ol{
     .card-3{
         grid-column: 1/span 1;
         grid-row: 1fr;
+    }
+    .blog-container{
+        flex-direction: column;
     }
     .newsletter-container{
         grid-template-columns: repeat(1, 1fr);
@@ -658,6 +728,10 @@ ul,ol{
         grid-column: 1/span 1;
         grid-row: 1fr;
     }
+    .blog-container{
+        flex-direction: column;
+    }
+    .blog,
     .newsletter{
         margin: 100px 1.5rem;
     }

@@ -462,6 +462,9 @@ ul,ol{
     .banner-input-size{
         width: 100%;
     }
+    .popular-tour {
+        margin: 50px 0;
+    }
     .popular-tour-container{
         flex-direction: column;
         margin: 0 1.5rem;
@@ -469,8 +472,15 @@ ul,ol{
     .popular-tour-content h3{
         font-size: 24px;
     }
-    .destination{
-        margin: 100px 1.5rem;
+    .popular-tour-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .destination,
+    .choose-us,
+    .newsletter,
+    .footer-content{
+        margin: 50px 1.5rem;
     }
     .destination-title{
         font-size: 24px;
@@ -481,6 +491,9 @@ ul,ol{
     .destination-container{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+    .grid-img{
+        height: 300px;
     }
     .grid-img img{
         width: 100%;
@@ -514,9 +527,6 @@ ul,ol{
         grid-column: 1/span 1;
         grid-row: 7/span 1;
     }
-    .choose-us{
-        margin: 100px 1.5rem;
-    }
     .section-title {
         font-size: 24px;
     }
@@ -539,10 +549,6 @@ ul,ol{
         grid-column: 1/span 1;
         grid-row: 1fr;
     }
-    .newsletter,
-    .footer-content{
-        margin: 100px 1.5rem;
-    }
     .newsletter-container{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -553,6 +559,9 @@ ul,ol{
     .newsletter-img{
         grid-column: 1/span 1;
         
+    }
+    .footer-bg {
+        padding: 10px 0;
     }
 }
 /* Media query for tablet devices */
@@ -579,11 +588,46 @@ ul,ol{
         flex-direction: column-reverse;
         margin: 0 1.5rem;
     }
+    .popular-tour-img img{
+        width: 100%;
+        height: 100%;
+    }
     .destination{
         margin: 100px 1.5rem;
     }
     .destination-p {
         padding: 0 8rem;
+    }
+    .grid-img{
+        height: 300px;
+    }
+    .grid-item-1{
+        grid-column: 1/span 6;
+        grid-row: 1/span 1;
+    }
+    .grid-item-2{
+        grid-column: 7/span 6;
+        grid-row: 1/span 1;
+    }
+    .grid-item-3{
+        grid-column: 1/span 6;
+        grid-row: 2/span 1;
+    }
+    .grid-item-4{
+        grid-column: 7/span 6;
+        grid-row: 2/span 1;
+    }
+    .grid-item-5{
+        grid-column: 1/span 6;
+        grid-row: 3/span 1;
+    }
+    .grid-item-6{
+        grid-column: 7/span 6;
+        grid-row: 3/span 1;
+    }
+    .grid-item-7{
+        grid-column: 1/span 12;
+        grid-row: 4/span 1;
     }
     .choose-us{
         margin: 100px 1.5rem;
